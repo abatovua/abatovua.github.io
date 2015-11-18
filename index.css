@@ -7,6 +7,10 @@ body {
 	margin: 0;
 	height: 100%;
 	background:
+				-webkit-linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+				-webkit-linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+				-webkit-linear-gradient(135deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+	background:
 				linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
 				linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
 				linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
@@ -35,11 +39,11 @@ header .row div:last-child p {
 	margin-bottom: 20px;
 }
 
-.project a {
+.project-link {
 	display: block;
 }
 
-.project a img {
+.project-link img {
 	width: 100%;
 	height: auto;
 }
@@ -53,23 +57,26 @@ header .row div:last-child p {
 	font-size: 1.3em;
 }
 
-.project p a {
-	display: inline;
-	transform: scale(1);
-	transition: none;
+.tech {
+	min-height: 57px;
 }
 
-.tech {
+.tech span {
 	font-weight: 700;
 }
 
 @media only screen and (min-width: 1170px) {
-	.project a {
+	.project-link {
+		-webkit-transition: -webkit-transform 0.5s ease-out;
+		transition: -webkit-transform 0.5s ease-out;
 		transition: transform 0.5s ease-out;
+		transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 	}
 
-	.project a:hover {
-		transform: scale(1.2);
+	.project-link:hover {
+		-webkit-transform: scale(1.2);
+		    -ms-transform: scale(1.2);
+		        transform: scale(1.2);
 	}
 }
 

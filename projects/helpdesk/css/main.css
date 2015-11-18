@@ -46,16 +46,16 @@ body
 /* HEADER */
 .page_header
 	{
-		padding: 0 6.25%;
+		padding: 15px 6.25% 0 6.25%;
 		min-height: 111px;
 		background-image: url('../img/header.png');
 		box-sizing: border-box;
-		background-repeat: no-repeat;
 	}
+
 .phone_nav
-{
-	display: none;
-}
+	{
+		display: none;
+	}
 .logo
 	{
 		float: left;
@@ -64,9 +64,8 @@ body
 .logo_icon
 	{
 		margin-right: 10px;
-		padding-top: 39px;
-		display: block;
-		float: left;
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 .logo_icon img
@@ -76,11 +75,11 @@ body
 
 .logo_title
 	{
-		float: left;
+		display: inline-block;
+		vertical-align: middle;
 		margin: 0;
-		padding-top: 21px;
 		font-family: HelveticaBold;
-		font-size: 5em;
+		font-size: 3.5em;
 		text-transform: uppercase;
 		color: #ffffff;
 	}
@@ -88,7 +87,7 @@ body
 .tagline
 	{
 		margin: 0;
-		padding-top: 60px;
+		padding-top: 35px;
 		float: right;
 		font-family: HelveticaLight;
 		font-size: 1.5em;
@@ -101,7 +100,6 @@ body
 		min-height: 111px;
 		background-image: url('../img/header.png');
 		box-sizing: border-box;
-		background-repeat: no-repeat;
 	}
 
 .page_footer::before
@@ -115,7 +113,7 @@ body
 	{
 		font-family: HelveticaLight;
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1em;
 		color: #ffffff;
 		margin: 0 auto;
 		box-sizing: border-box;
@@ -875,21 +873,21 @@ body
 	{
 		float: none;
 		margin: 0 auto;
-		padding-top: 18px;
-		width: 300px;
+		padding-top: 0;
 		overflow: hidden;
 		box-sizing: border-box;
+		text-align: center;
 	}
 
 .logo_icon
 	{
-		padding-top: 20px;
+		padding-top: 0;
 	}
 
 .logo_title
 	{
 		font-size: 2.5em;
-		vertical-align: sub;
+		vertical-align: middle;
 	}
 
 .tagline

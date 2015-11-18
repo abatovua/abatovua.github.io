@@ -1,0 +1,84 @@
+footer
+	background-color: #f1f2f6
+	padding: 60px 0 0 0
+	
+.footer-nav
+	width: 1170px
+	margin: 0 auto
+	display: flex
+
+.footer-nav--item
+	width: 20%
+	list-style-type: none
+	padding: 0
+
+
+	b
+		display: block
+		box-sizing: border-box
+		margin-bottom: 20px
+		padding-bottom: 3px
+		color: #292a2d
+		text-transform: uppercase
+		position: relative
+		+section-desc
+		
+
+	b::after
+		content: ''
+		position: absolute
+		width: 20px
+		bottom: 0
+		left: 0
+		border-top: 4px solid #bf17a0
+
+	a
+		font-size: 1.35em
+		font-weight: 400
+		color: #55565a
+		padding: 10px 0
+		box-sizing: border-box
+		text-decoration: none
+		display: block
+
+	a:hover
+		font-weight: 900
+		color: #bf17a0
+
+.footer-info
+	margin-top: 90px
+	padding: 70px 10%
+	box-sizing: border-box
+	display: flex
+	border-top: 2px solid #e6e7ec
+
+.footer-info-cell
+	width: 50%
+	display: flex
+	align-items: center
+	
+	img
+		margin-right: 12px
+		
+	span
+		+section-desc
+		color: #55565a
+		margin-right: 20px
+
+.footer-info-cell:first-child
+	justify-content: flex-start
+
+.footer-info-cell:nth-child(2)
+	justify-content: flex-end
+
+
+.scroller
+	width: 50px
+	height: 50px
+	background-color: #ffffff
+	border-radius: 100%
+	background-image: url("../img/arrow-footer.svg")
+	background-size: 25px 25px
+	background-repeat: no-repeat
+	background-position: center center
+	cursor: pointer

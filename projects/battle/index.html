@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BattleShips</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<h1>Battle of the Ships <label for="tip">i</label></h1>
+		<div class="winner">
+			<div class="inner">
+				<h2></h2>
+				<a href="">START A NEW GAME</a>
+			</div>
+		</div>
+		<input type="checkbox" id="tip">
+		<div class="tip">
+			<ol>
+				<li>Right click on the ship to rotate it</li>
+				<li>Drag and drop ship on the grid</li>
+				<li>If you want to rotate placed ship - drag it out from the grid and rotate</li>
+				<li><label for="tip">OK</label></li>
+			</ol>
+		</div>
+		<div class="desk">
+			<div class="player1">
+				<div class="cover"></div>
+				<h2>Player 1</h2>
+				<div class="workarea">
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+				</div>
+
+				<div class="initialize">
+					<span>Have you finished the rotation?</span>
+					<button>Yes</button>
+				</div>
+
+				<div class="preparation">
+					<!-- 4 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck4" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+					</div>
+					<!-- 3 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck3" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+						<div class="deck3" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+					</div>
+					<!-- 2 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck2" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+						<div class="deck2" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+						<div class="deck2" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+					</div>
+
+					<!-- 1 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="player2">
+				<div class="cover"></div>
+				<h2>Player 2</h2>
+				<div class="workarea">
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+					<div class="row">
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+						<div class="cell"></div>
+					</div>
+				</div>
+
+				<div class="initialize">
+					<span>Have you finished the rotation?</span>
+					<button>Yes</button>
+				</div>
+				
+				<div class="preparation">
+					<!-- 4 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck4" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+					</div>
+					<!-- 3 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck3" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+						<div class="deck3" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+					</div>
+					<!-- 2 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck2" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+						<div class="deck2" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+						<div class="deck2" data-direction="0">
+							<div class="deck"></div>
+							<div class="deck"></div>
+						</div>
+					</div>
+
+					<!-- 1 DECKS -->
+					<div class="ship-wrapper">
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+						<div class="deck1" data-direction="0">
+							<div class="deck"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+
+
+		<script src="main.js" type="text/javascript"></script>
+	</body>
+</html>

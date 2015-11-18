@@ -1,0 +1,87 @@
+.press-content
+	padding: 100px 0 150px 0
+	width: 100%
+	max-width: 1170px
+	margin: 0 auto
+	
+	strong
+		+section-desc
+		color: #acadb0
+		text-transform: uppercase
+
+	h2
+		margin-top: 60px
+		margin-bottom: 100px
+		+section-heading
+		color: #2b2c30
+		width: 585px
+
+.press-content--wrapper
+	text-align: left
+
+.press-content--article
+	display: inline-block
+	vertical-align: top
+	margin-bottom: 80px
+	padding: 0 50px 0 80px
+	width: 33.33333%
+	position: relative
+	box-sizing: border-box
+	text-align: left
+
+.article-date
+	box-sizing: border-box
+	padding: 10px 0
+	width: 65px
+	position: absolute
+	top: 0
+	left: 0
+	text-align: center
+	text-transform: uppercase
+	border: 2px solid #d3d5da
+
+	&::after
+		content: ''
+		position: absolute
+		height: 4px
+		background-color: #bf17a0
+		bottom: 0
+		left: 0
+		right: 0
+
+	.day, .month
+		display: block
+
+	.day
+		font-size: 2em
+		font-family: sans-serif
+		font-weight: bold
+		color: #2b2c30
+
+	.month
+		+section-desc
+		color: #a4a5a9
+
+.article-heading
+	font-size: 2em
+	font-weight: 400
+	margin: 0
+	color: #bf17a0
+
+.article-pre
+	+section-desc
+	margin: 15px 0 50px 0
+	color: #6a6c74
+	height: 120px
+
+.article-button
+	text-decoration: none
+	+section-desc
+	padding: 15px 17px
+	border: 2px solid #d3d5da
+	border-radius: 5px
+	color: #bf17a0
+	transition: background-color 0.5s linear
+
+	&:hover
+		background-color: darken(#d3d5da, 1%)

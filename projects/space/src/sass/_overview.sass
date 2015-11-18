@@ -1,0 +1,74 @@
+.overview
+	padding: 100px 0 150px 0
+
+	strong
+		text-transform: uppercase
+		text-align: center
+		display: block
+		color: #bf17a0
+		font-size: 1.5em
+		font-weight: 400
+		position: relative
+
+	strong::after
+		content: ''
+		position: absolute
+		width: 40px
+		height: 3px
+		background-color: #bf17a0
+		top: 25px
+		left: 0
+		right: 0
+		margin: 0 auto
+
+	h2
+		+section-heading
+		color: #2b2c30
+		margin: 50px 0 40px 0
+		text-align: center
+
+	p
+		+section-desc
+		text-align: center
+		color: #6a6c74
+		margin-bottom: 130px
+
+.advantages
+	width: 750px
+	margin: 0 auto
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+
+.advantages-cell
+	width: 300px
+	font-size: 0
+	line-height: 1
+	margin-bottom: 27px
+
+.adv-label,
+.adv-progress-bar
+	display: inline-block
+	vertical-align: middle
+
+.adv-label
+	width: 70px
+	font-size: 13px
+	color: #646262
+
+.adv-progress-bar
+	width: calc(100% - 70px)
+	height: 12px
+	font-size: 14px
+	position: relative
+	background: linear-gradient(90deg, #3b4bd2, #bf1eae)
+
+.mask
+	position: absolute
+	width: 100%
+	top: 0
+	right: 0
+	bottom: 0
+	background-color: #f1f2f6
+	transition: width 1s ease-out

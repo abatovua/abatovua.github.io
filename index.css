@@ -1,0 +1,93 @@
+html {
+	min-height: 100%;
+}
+
+body {
+	font: 10px/1.5 Montserrat, Arial, sans-serif;
+	margin: 0;
+	height: 100%;
+	background:
+				linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+				linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+				linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+				background-color: #e1ebbd;
+				background-size: 128px 128px;
+}
+
+header.container-fluid {
+	width: 100%;
+	margin-bottom: 125px;
+	padding: 10px 15%;
+	background-color: rgba(255, 255, 255, 0.95);
+
+}
+
+header p {
+	font-size: 3em;
+	font-weight: 700;
+}
+
+header .row div:last-child p {
+	text-align: right;
+}
+
+.project {
+	margin-bottom: 20px;
+}
+
+.project a {
+	display: block;
+}
+
+.project a img {
+	width: 100%;
+	height: auto;
+}
+
+.project h2 {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.project p {
+	font-size: 1.3em;
+}
+
+.project p a {
+	display: inline;
+	transform: scale(1);
+	transition: none;
+}
+
+.tech {
+	font-weight: 700;
+}
+
+@media only screen and (min-width: 1170px) {
+	.project a {
+		transition: transform 0.5s ease-out;
+	}
+
+	.project a:hover {
+		transform: scale(1.2);
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	header p {
+		text-align: center;
+	}
+
+	header .row div:last-child p {
+		text-align: center;
+	}
+
+	header.container-fluid {
+		margin-bottom: 50px;
+	}
+
+	.project {
+		margin-bottom: 35px;
+	}
+
+}

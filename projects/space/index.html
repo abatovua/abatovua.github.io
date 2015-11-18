@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Space Exploration</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/main.css"><base target="_blank">
+		<script src="js/d3.min.js" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="intro-bg">
+			<header class="row page-header">
+				<a href="#" class="logo">
+					<img src="img/logo.svg" width="40" height="40" class="logo-icon">
+					<span class="logo-text">SpacePlatforms</span>
+				</a>
+				<nav>
+					<a href="#" class="nav-item">Home</a>
+					<a href="#" class="nav-item">Missions</a>
+					<a href="#" class="nav-item">Research</a>
+					<a href="#" class="nav-item">Explorers</a>
+					<a href="#" class="nav-item">Our Philosophy</a>
+				</nav>
+			</header>
+			<div class="row intro">
+				<h1>Space Exploration</h1>
+				<h2>Space exploration is the ongoing discovery and exploration<br>
+					of celestial structures in outer space
+				</h2>
+				<a href="#" class="start">Start exploring</a>
+				<div class="timeline-wrap">
+					<svg class="svg-resp" id="timelineBox" viewBox="0 0 1150 221">
+						<defs>
+				    		<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+				      			<stop offset="0%" style="stop-color:rgb(34,221,188);stop-opacity:1" />
+				      			<stop offset="30%" style="stop-color:rgb(34,221,188);stop-opacity:1" />
+				      			<stop offset="80%" style="stop-color:rgb(255,34,214);stop-opacity:1" />
+				      			<stop offset="100%" style="stop-color:rgb(255,34,214);stop-opacity:1" />
+				    		</linearGradient>
+				  		</defs>
+				  		<text x="83" y="15" class='timeline-text'>
+					        <tspan class="event-date" x="83" dy="0">JUNE 2016</tspan>
+					        <tspan class="event-description" x="83" dy="25" fill="#29d7bd">First attempts to launch a</tspan>
+					        <tspan class="event-description" x="83" dy="20" fill="#29d7bd">Mars exploration mission</tspan>
+				      	</text>
+					    <text x="101" y="165" class='timeline-text'>
+						    <tspan class="event-date" x="95" dy="0">JULY 2020</tspan>
+						    <tspan class="event-description" x="95" dy="25" fill="#29d7bd">Landed on Mars, colony</tspan>
+						    <tspan class="event-description" x="95" dy="20" fill="#29d7bd">in place</tspan>
+					    </text>
+					    <text x="301" y="165" class='timeline-text'>
+						    <tspan class="event-date" x="301" dy="0">JANUARY 2100</tspan>
+						    <tspan class="event-description" x="301" dy="25" fill="#48bdc0">First signs of extraterrestrial</tspan>
+						    <tspan class="event-description" x="301" dy="20" fill="#48bdc0">intelligence found</tspan>
+					    </text>
+					    <text x="634" y="165" class='timeline-text'>
+						    <tspan class="event-date" x="634" dy="0">AUGUST 2300</tspan>
+						    <tspan class="event-description" x="634" dy="25" fill="#8a85c8">Aliens have conquered our</tspan>
+						    <tspan class="event-description" x="634" dy="20" fill="#8a85c8">galaxy</tspan>
+					    </text>
+					    <text x="896" y="15" class='timeline-text'>
+						    <tspan class="event-date" x="896" dy="0">FEBRUARY 2534</tspan>
+						    <tspan class="event-description" x="896" dy="25" fill="#bd59ce">Humans have decided to</tspan>
+						    <tspan class="event-description" x="896" dy="20" fill="#bd59ce">whoop some alien asses</tspan>
+					    </text>
+  					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="row company-data">
+			<strong>Analytics</strong>
+			<h2>You should take a quick look<br/>
+				at our data
+			</h2>
+			<p>We want to show you how the process works.<br/>
+				Display data for:
+			</p>
+			<div class="barchart">
+				<div class="barchart-select--box">
+					<div class="barchart-select">June</div>
+					<ul class="barchart-options">
+						<li class="barchart-option" data-order="0">June</li>
+						<li class="barchart-option" data-order="1">July</li>
+						<li class="barchart-option" data-order="2">August</li>
+						<li class="barchart-option" data-order="3">September</li>
+						<li class="barchart-option" data-order="4">October</li>
+						<li class="barchart-option" data-order="5">November</li>
+					</ul>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 1</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 3</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 5</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 7</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 9</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 11</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 13</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 15</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 17</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 19</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 21</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 23</span>
+				</div>
+				<div class="bar-cell">
+					<div class="bar-array"></div>
+					<div class="bar"></div>
+					<span class="bar-title">Jun 25</span>
+				</div>
+			</div>
+		</div>
+		<div class="row overview">
+			<strong>Product overview</strong>
+			<h2>This is something about<br/>
+				numbers
+			</h2>
+			<p>Whale is the common name for various marine mammals of<br/>
+				the order Cetacea. The term whale sometimes refers to all<br/>
+				cetaceans, but more often it excludes.
+			</p>
+			<div class="advantages">
+				<div class="advantages-cell">
+					<span class="adv-label">Weight</span>
+					<div class="adv-progress-bar">
+						<div class="mask"></div>
+					</div>
+				</div>
+				<div class="advantages-cell">
+					<span class="adv-label">Landing</span>
+					<div class="adv-progress-bar">
+						<div class="mask"></div>
+					</div>
+				</div>
+				<div class="advantages-cell">
+					<span class="adv-label">Economy</span>
+					<div class="adv-progress-bar">
+						<div class="mask"></div>
+					</div>
+				</div>
+				<div class="advantages-cell">
+					<span class="adv-label">Software</span>
+					<div class="adv-progress-bar">
+						<div class="mask"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row radar-diagram">
+			<div class="radarchart-select--box">
+			</div>
+			<div class="radar-wrapper">
+				<div class="radar-chart--box"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="press-content">
+				<strong>Press releases</strong>
+				<h2>Whales range in size from the blue whale to red epic whale</h2>
+				<div class="press-content--wrapper">
+					<div class="press-content--article">
+						<div class="article-date">
+							<span class="day">04</span>
+							<span class="month">Feb</span>
+						</div>
+						<h3 class="article-heading">Whale is the common name for various marine mammals of the order Cetacea.</h3>
+						<p class="article-pre">The term whale sometimes refers to all cetaceans, but more often it excludes dolphins and porpoises, which are smaller members of the suborder Odontoceti.</p>
+						<a href="#" class="article-button">Read more</a>
+					</div
+					><div class="press-content--article">
+						<div class="article-date">
+							<span class="day">23</span>
+							<span class="month">Jan</span>
+						</div>
+						<h3 class="article-heading">Whales range in size from the blue whale, the largest animal known to have ever existed</h3>
+						<p class="article-pre">Whales are long-lived, humpback whales living for up to 77 years, while bowhead whales may live for more than a century.</p>
+						<a href="#" class="article-button">Read more</a>
+					</div
+					><div class="press-content--article">
+						<div class="article-date">
+							<span class="day">19</span>
+							<span class="month">Mar</span>
+						</div>
+						<h3 class="article-heading">Whales range in size from the blue whale, the largest animal known to have ever existed</h3>
+						<p class="article-pre">Whales are long-lived, humpback whales living for up to 77 years, while bowhead whales may live for more than a century.</p>
+						<a href="#" class="article-button">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="row">
+			<div class="footer-nav">
+				<div class="footer-nav--item">
+					<b>Home</b>
+					<a href="#">Timeline</a>
+					<a href="#">Analitycs</a>
+					<a href="#">Product overview</a>
+					<a href="#">Press releases</a>
+				</div>
+				<div class="footer-nav--item">
+					<b>Missions</b>
+					<a href="#">Mars</a>
+					<a href="#">Venus</a>
+					<a href="#">Orion</a>
+					<a href="#">Atlantis</a>
+				</div>
+				<div class="footer-nav--item">
+					<b>Research</b>
+					<a href="#">Fusion drive</a>
+					<a href="#">Quantum drive</a>
+					<a href="#">Advanced materials</a>
+					<a href="#">Optics</a>
+					<a href="#">Navigation systems</a>
+				</div>
+				<div class="footer-nav--item">
+					<b>Explorers</b>
+					<a href="#">Search database</a>
+					<a href="#">Current</a>
+					<a href="#">Archive</a>
+				</div>
+				<div class="footer-nav--item">
+					<b>Our philosophy</b>
+					<a href="#">Mission statement</a>
+					<a href="#">Our values</a>
+					<a href="#">Core beliefs</a>
+					<a href="#">Our plans</a>
+				</div>
+			</div>
+			<div class="footer-info">
+				<div class="footer-info-cell">
+					<img src="img/footer-logo.svg" width="35" height="35">
+					<span>SpacePlatforms is the leader of space exploration industry</span>
+				</div>
+				<div class="footer-info-cell">
+					<span>Space explorers code of honour</span>
+					<span>Terms and conditions</span>
+					<div class="scroller"></div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,129 @@
+.company-data
+	background-color: #252528
+	padding-top: 130px
+	padding-bottom: 100px
+
+	h2
+		+section-heading
+		margin: 0 0 50px 0
+		color: #22ddbc
+		text-align: center
+		
+	p
+		+section-desc
+		margin-bottom: 30px
+		color: #cdcdd8
+		text-align: center 
+
+	strong
+		text-transform: uppercase
+		display: block
+		text-align: center
+		font-size: 1.5em
+		font-weight: 400
+		color: #ffffff
+
+.barchart
+	width: 1024px
+	margin: 80px auto 0 auto
+	padding-top: 110px
+	position: relative
+	box-sizing: border-box
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: flex-end
+
+.barchart-select--box
+	width: 165px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	margin: 0 auto
+	border-top-left-radius: 28px
+	border-top-right-radius: 28px
+	
+	
+.barchart-select--box.active
+	border-left: 1px solid #66666b
+	border-right: 1px solid #66666b
+	border-bottom: 1px solid #66666b
+	background-color: rgba(37, 37, 40, 0.7)
+
+.barchart-select--box.active .barchart-options
+	display: block
+
+.barchart-select
+	padding: 15px 25px
+	box-sizing: border-box
+	font-size: 1.5em
+	color: #ffffff
+	border: 1px solid #66666b
+	border-radius: 30px
+	vertical-align: middle
+	cursor: pointer
+	position: relative
+
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		right: 30px
+		top: 23px
+		width: 14px
+		height: 9px
+		background-image: url('../img/arrow.svg')
+		background-size: contain
+		background-position: center center
+		cursor: pointer
+
+.barchart-options
+	list-style-type: none
+	margin: 0
+	padding: 0
+	cursor: pointer
+	display: none
+
+.barchart-option
+	padding: 5px 25px
+	box-sizing: border-box
+	font-size: 1.5em
+	color: #ffffff
+
+.barchart-option:hover
+	background-color: rgba(72, 72, 76, 0.7)
+
+.bar-cell
+	height: 420px
+	width: 4.88%
+	cursor: pointer
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+
+	&:hover .bar
+		background: repeating-linear-gradient(rgb(138, 133, 200), rgb(138, 133, 200) 3.5px, transparent 3.5px, transparent 4.5px)
+
+	&:hover .bar-array
+		background-color: #636365
+
+.bar
+	height: 0
+	transition: height 1s ease-out
+	background: repeating-linear-gradient(rgb(20, 179, 150), rgb(20, 179, 150) 3.5px, transparent 3.5px, transparent 4.5px)
+
+.bar-array
+	width: 3px
+	margin: 0 auto
+	height: 0
+	background-color: #2d2d2f
+	transition: height 1s ease-out
+
+.bar-title
+	height: 40px
+	box-sizing: border-box
+	padding-top: 20px
+	text-align: center
+	color: #cdcdd8
+

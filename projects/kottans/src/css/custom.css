@@ -263,27 +263,19 @@ select.browser-default {
 }
 }
 
-@media only screen and (max-device-height: 500px) {
-.card.viewed .card-content,
-.card.viewed .card-content table {
-  font-size: 12px;
-}
-
-td {
-  padding: 2px;
-}
-
-.card.viewed .card-image img {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto;
-}
-}
-
 @media (orientation : landscape) and (max-device-height: 376px) and (max-device-width: 736px) {
   .card.viewed .card-image img {
     width: 60px;
     height: 60px;
     margin: 0 auto;
-}
+  }
+
+  .card.viewed .card-content,
+  .card.viewed .card-content table {
+    font-size: 12px;
+  }
+
+  td {
+    padding: 2px;
+  }
 }

@@ -280,7 +280,7 @@ td {
 }
 }
 
-@media only screen and (max-device-height: 376px) and (max-width: 668px) {
+@media only screen and (max-device-height: 376px) and (max-device-width: 736px) {
   .card.viewed .card-image img {
     width: 60px;
     height: 60px;

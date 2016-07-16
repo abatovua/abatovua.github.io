@@ -1,0 +1,107 @@
+$banner-text-main-color: #47525d;
+$try-button-background-color: #0071e0;
+$try-button-background-color-hover: #3398ea;
+$try-button-text-color: #fff;
+
+
+.dropbox-banner
+{
+	height: 700px;
+	background-image: url("../img/dropbox.jpg");
+	background-repeat: no-repeat;
+	background-color: #F7F7F7;
+	background-position: 160% center;
+}
+
+.dropbox-banner-content
+{
+	width: 990px;
+	margin: 0 auto;
+	padding: 75px 20px;
+	color: $banner-text-main-color;
+}
+
+.banner-header
+{
+	width: 450px;
+	margin: 85px 0 20px 0;
+	font-size: 47px;
+	font-weight: 300;
+}
+
+.banner-description
+{
+	width: 450px;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.try-button
+{
+	display: inline-block;
+	margin-bottom: 15px;
+	padding: 19px 26px;
+	background-color: $try-button-background-color;
+	font-size: 21px;
+	font-weight: normal;
+	text-decoration: none;
+	color: $try-button-text-color;
+	border-radius: 6px;
+
+	&:hover
+	{
+		background-color: $try-button-background-color-hover;
+	}
+}
+
+.buy-now
+{
+	color: $try-button-background-color-hover;
+
+	&:hover
+	{
+		color: lighten($try-button-background-color-hover, 20%);
+	}
+}
+
+@media only screen and (min-width: 1771px)
+{
+	.dropbox-banner
+	{
+		background-position: 130% center;
+	}
+}
+
+@media only screen and (max-width: 1201px)
+{
+	.dropbox-banner
+	{
+		background-position: 370px center;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	.banner-header
+	{
+		width: 350px;
+		font-size: 26px;
+	}
+
+	.banner-description
+	{
+		width: 330px;
+		font-size: 16px;
+	}
+
+	.try-button
+	{
+		font-size: 16px;
+		padding: 14px 40px;
+	}
+
+	.banner-try-section
+	{
+		text-align: center;
+	}
+}

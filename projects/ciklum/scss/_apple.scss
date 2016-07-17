@@ -7,254 +7,254 @@ $apple-credentials-links-color: #08c;
 
 .apple-footer
 {
-	background-color: $apple-footer-bg-color;
+  background-color: $apple-footer-bg-color;
 }
 
 .apple-footer-content
 {
-	max-width: 1024px;
-	margin: 0 auto;
-	padding: 32px 22px 30px 22px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 32px 22px 30px 22px;
 }
 
 .apple-footer-navigation
 {
-	margin: 0;
+  margin: 0;
 
-	&::after
-	{
-	content: "";
-	display: table;
-	clear: both;
-	}
+  &::after
+  {
+  content: "";
+  display: table;
+  clear: both;
+  }
 }
 
 .apple-nav-column
 {
-	width: 20%;
-	float: left;
+  width: 20%;
+  float: left;
 
-	label
-	{
-		display: block;
-		font-size: 12px;
-		font-weight: 700;
-		color: $apple-footer-header-color;
-	}
+  label
+  {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: $apple-footer-header-color;
+  }
 }
 
 .apple-nav-section-content
 {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-	li
-	{
-		a
-		{
-			color: $apple-footer-text-color;
-			font-size: 12px;
-			text-decoration: none;
+  li
+  {
+    a
+    {
+      color: $apple-footer-text-color;
+      font-size: 12px;
+      text-decoration: none;
 
-			&:hover,
-			&:focus,
-			&:active
-			{
-				text-decoration: underline;
-			}
-		}
-	}
+      &:hover,
+      &:focus,
+      &:active
+      {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .apple-nav-section ~ .apple-nav-section
 {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
 .apple-nav-section
 {
-	input[type="checkbox"]
-	{
-		display: none;
-	}
+  input[type="checkbox"]
+  {
+    display: none;
+  }
 }
 
 .apple-credentials
 {
-	p
-	{
-		margin: 0;
-		padding-bottom: 5px;
-		border-bottom: 1px solid $apple-credentials-border-color;
-		font-size: 12px;
-		color: $apple-credentials-text-color;
+  p
+  {
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $apple-credentials-border-color;
+    font-size: 12px;
+    color: $apple-credentials-text-color;
 
-		a
-		{
-			color: $apple-credentials-links-color;
-			text-decoration: none;
+    a
+    {
+      color: $apple-credentials-links-color;
+      text-decoration: none;
 
-			&:hover,
-			&:active,
-			&:focus
-			{
-				text-decoration: underline;
-			}
-		}
-	}
+      &:hover,
+      &:active,
+      &:focus
+      {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .apple-credentials-legal
 {
 
-	padding-top: 5px;
+  padding-top: 5px;
 
-	small
-	{
-		display: block;
-		margin-right: 26px;
-		padding-top: 4px;
-		float: left;
-		font-size: 12px;
-		color: $apple-credentials-text-color;
-	}
+  small
+  {
+    display: block;
+    margin-right: 26px;
+    padding-top: 4px;
+    float: left;
+    font-size: 12px;
+    color: $apple-credentials-text-color;
+  }
 
-	ul
-	{
-		margin: 0;
-		padding: 0;
-		float: left;
-		list-style: none;
+  ul
+  {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
 
-		li
-		{
-			float: left;
-			padding: 0 12px;
-			border-right: 1px solid #e3e3e3;
+    li
+    {
+      float: left;
+      padding: 0 12px;
+      border-right: 1px solid #e3e3e3;
 
-			&:first-child
-			{
-				padding-left: 0;
-			}
+      &:first-child
+      {
+        padding-left: 0;
+      }
 
-			&:last-child
-			{
-				border-right: 0;
-			}
+      &:last-child
+      {
+        border-right: 0;
+      }
 
-			a
-			{
-				text-decoration: none;
-				color: $apple-footer-header-color;
-				font-size: 12px;
+      a
+      {
+        text-decoration: none;
+        color: $apple-footer-header-color;
+        font-size: 12px;
 
-				&:hover,
-				&:active,
-				&:focus
-				{
-					text-decoration: underline;
-				}
-			}
-		}
-	}
+        &:hover,
+        &:active,
+        &:focus
+        {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 
-	&::after
-	{
-		content: "";
-		display: table;
-		clear: both;
-	}
+  &::after
+  {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 @media only screen and (max-width: 767px)
 {
 
-	.apple-nav-column
-	{
-		width: 100%;
-		float: none;
+  .apple-nav-column
+  {
+    width: 100%;
+    float: none;
 
-		label
-		{
-			padding-top: 15px;
-			padding-bottom: 15px;
-			font-size: 14px;
-			font-weight: 400;
-			cursor: pointer;
-			position: relative;
-			z-index: 2;
-			background-color: $apple-footer-bg-color;
+    label
+    {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+      background-color: $apple-footer-bg-color;
 
-			&::after
-			{
-				content: "+";
-				position: absolute;
-				right: 0;
-				font-weight: 400;
-				transition: transform 0.3s ease;
-			}
-		}
-	}
+      &::after
+      {
+        content: "+";
+        position: absolute;
+        right: 0;
+        font-weight: 400;
+        transition: transform 0.3s ease;
+      }
+    }
+  }
 
-	.apple-footer-content
-	{
-		padding-left: 16px;
-		padding-right: 16px;
-	}
+  .apple-footer-content
+  {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-	.apple-nav-section
-	{
-		border-bottom: 1px solid #e3e3e3;
-		overflow: hidden;
-		position: relative;
-		z-index: 2;
-	}
+  .apple-nav-section
+  {
+    border-bottom: 1px solid #e3e3e3;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
 
-	.apple-nav-section-content
-	{
-		padding: 0 0 16px 0;
-		position: absolute;
-		z-index: 1;
-		transform: translateY(-100px);
-		transition: transform 300ms ease;
+  .apple-nav-section-content
+  {
+    padding: 0 0 16px 0;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-100px);
+    transition: transform 300ms ease;
 
-		li
-		{
-			padding: 4px 14px;
-		}
-	}
+    li
+    {
+      padding: 4px 14px;
+    }
+  }
 
-	.apple-nav-section
-	{
-		input[type="checkbox"]:checked ~ .apple-nav-section-content
-		{
-			transform: translateY(0);
-			position: static;
-		}
+  .apple-nav-section
+  {
+    input[type="checkbox"]:checked ~ .apple-nav-section-content
+    {
+      transform: translateY(0);
+      position: static;
+    }
 
-		input[type="checkbox"]:checked + label
-		{
-			font-weight: 700;
-		}
+    input[type="checkbox"]:checked + label
+    {
+      font-weight: 700;
+    }
 
-		input[type="checkbox"]:checked + label::after
-		{
-			transform: rotate(45deg);
-		}
-	}
+    input[type="checkbox"]:checked + label::after
+    {
+      transform: rotate(45deg);
+    }
+  }
 
-	.apple-nav-section ~ .apple-nav-section
-	{
-		padding-top: 0;
-	}
+  .apple-nav-section ~ .apple-nav-section
+  {
+    padding-top: 0;
+  }
 
-	.apple-credentials
-	{
-		p
-		{
-			padding: 10px 0;
-		}
-	}
+  .apple-credentials
+  {
+    p
+    {
+      padding: 10px 0;
+    }
+  }
 
 }

@@ -10,167 +10,167 @@ $terms-text-color: #747c83;
 
 .invision
 {
-	background-color: $section-background;
+  background-color: $section-background;
 }
 
 .invision-content
 {
-	width: 100%;
-	max-width: 1320px;
-	margin: 0 auto;
-	padding: 160px 20px 145px 20px;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 160px 20px 145px 20px;
 }
 
 .invision-header
 {
-	margin: 0 0 55px 0;
-	text-align: center;
-	font-size: 30px;
-	font-weight: 300;
-	color: $section-main-text-color;
+  margin: 0 0 55px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: $section-main-text-color;
 }
 
 .invision-form
 {
-	padding: 0 50px;
-	margin-bottom: 30px;
+  padding: 0 50px;
+  margin-bottom: 30px;
 }
 
 .input-wrapper
 {
-	display: inline-block;
-	padding-right: 10px;
-	width: 25%;
-	position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  width: 25%;
+  position: relative;
 
-	input, button
-	{
-		width: 100%;
-		border: 0;
-		border-radius: 3px;
+  input, button
+  {
+    width: 100%;
+    border: 0;
+    border-radius: 3px;
 
-		&:focus
-		{
-			outline: none;
-		}
-	}
+    &:focus
+    {
+      outline: none;
+    }
+  }
 
-	label
-	{
-		width: 24px;
-		height: 24px;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		background-position: center center;
-		position: absolute;
-		top: 15px;
-		left: 15px;
-	}
+  label
+  {
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
 }
 
 #invision-name,
 #invision-email,
 #invision-password
 {
-	padding: 18px 15px 18px 48px;
-	color: $input-text-color;
-	font-size: 18px;
-	font-weight: 300;
+  padding: 18px 15px 18px 48px;
+  color: $input-text-color;
+  font-size: 18px;
+  font-weight: 300;
 
-	&::-webkit-input-placeholder
-	{
-		color: $input-text-color;
-	}
+  &::-webkit-input-placeholder
+  {
+    color: $input-text-color;
+  }
 
-	&::-moz-placeholder
-	{
-		color: $input-text-color;
-	}
+  &::-moz-placeholder
+  {
+    color: $input-text-color;
+  }
 
-	&:-moz-placeholder
-	{
-		color: $input-text-color;
-	}
+  &:-moz-placeholder
+  {
+    color: $input-text-color;
+  }
 
-	&:-ms-input-placeholder
-	{
-		color: $input-text-color;
-	}
+  &:-ms-input-placeholder
+  {
+    color: $input-text-color;
+  }
 
-	&:focus
-	{
-		&::-webkit-input-placeholder
-		{
-			color: lighten($input-text-color, 10%);
-		}
+  &:focus
+  {
+    &::-webkit-input-placeholder
+    {
+      color: lighten($input-text-color, 10%);
+    }
 
-		&::-moz-placeholder
-		{
-			color: lighten($input-text-color, 10%);
-		}
+    &::-moz-placeholder
+    {
+      color: lighten($input-text-color, 10%);
+    }
 
-		&:-moz-placeholder
-		{
-			color: lighten($input-text-color, 10%);
-		}
+    &:-moz-placeholder
+    {
+      color: lighten($input-text-color, 10%);
+    }
 
-		&:-ms-input-placeholder
-		{
-			color: lighten($input-text-color, 10%);
-		}
-	}
+    &:-ms-input-placeholder
+    {
+      color: lighten($input-text-color, 10%);
+    }
+  }
 }
 
 .invision-submit
 {
-	padding: 20px 15px;
-	text-transform: uppercase;
-	font-size: 15px;
-	font-weight: 400;
-	color: $section-main-text-color;
-	background-color: $submit-background-color;
-	cursor: pointer;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  color: $section-main-text-color;
+  background-color: $submit-background-color;
+  cursor: pointer;
 
-	&:hover
-	{
-		background-color: $submit-background-color-hovered;
-	}
+  &:hover
+  {
+    background-color: $submit-background-color-hovered;
+  }
 
 }
 
 [for="invision-name"]
 {
-	background-image: url('../img/user.png');
+  background-image: url('../img/user.png');
 }
 
 [for="invision-email"]
 {
-	background-image: url('../img/email.png');
+  background-image: url('../img/email.png');
 }
 
 [for="invision-password"]
 {
-	background-image: url('../img/lock.png');
+  background-image: url('../img/lock.png');
 }
 
 .invision-terms
 {
-	margin-bottom: 0;
-	text-align: center;
-	font-size: 12px;
-	color: $terms-text-color;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 12px;
+  color: $terms-text-color;
 
-	a
-	{
-		color: $terms-text-color;
+  a
+  {
+    color: $terms-text-color;
 
-		&:hover,
-		&:active,
-		&:focus
-		{
-			color: $section-main-text-color;
-		}
-	}
+    &:hover,
+    &:active,
+    &:focus
+    {
+      color: $section-main-text-color;
+    }
+  }
 }
 
 
@@ -178,53 +178,53 @@ $terms-text-color: #747c83;
 
 @media only screen and (max-width: 1310px)
 {
-	.input-wrapper
-	{
-		width: 33.3333%;
-	}
+  .input-wrapper
+  {
+    width: 33.3333%;
+  }
 
-	.invision-submit-wrapper
-	{
-		width: 100%;
-		text-align: center;
-		margin-top: 25px;
+  .invision-submit-wrapper
+  {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
 
-		button
-		{
-			width: 285px;
-		}
-	}
+    button
+    {
+      width: 285px;
+    }
+  }
 }
 
 @media only screen and (max-width: 870px)
 {
-	.input-wrapper
-	{
-		width: 285px;
-		display: block;
-		margin: 0 auto;
-		text-align: center;
-		padding: 0;
+  .input-wrapper
+  {
+    width: 285px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
 
-		input, button
-		{
-			width: 100%;
-			margin-bottom: 25px;
-		}
-	}
+    input, button
+    {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
 
-	.invision-submit-wrapper
-	{
-		margin-top: 0;
-	}
+  .invision-submit-wrapper
+  {
+    margin-top: 0;
+  }
 
-	.invision-form
-	{
-		padding: 0;
-	}
+  .invision-form
+  {
+    padding: 0;
+  }
 
-	.invision-content
-	{
-		padding: 50px 10px;
-	}
+  .invision-content
+  {
+    padding: 50px 10px;
+  }
 }

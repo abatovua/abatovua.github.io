@@ -101,21 +101,22 @@ header {
     right: 20px;
     top: 15px; }
 
-.tab-capture.containable.active + .tab-content, .containable.active.tab-content-link + .tab-content {
-  display: block; }
-
 .direct-link:hover {
   text-decoration: underline; }
 
 .tab-content {
   display: none;
   width: 299px;
+  height: 100%;
   padding: 0;
   position: absolute;
   top: 0;
   left: 238px;
   list-style: none;
   background-color: #D9D9D9; }
+
+.tab-capture.containable.active ~ .tab-content, .containable.active.tab-content-link ~ .tab-content {
+  display: block; }
 
 .tab-content-link:hover {
   text-decoration: underline; }
@@ -195,6 +196,85 @@ label[for="site-search"] {
   .store:hover {
     background-color: #f1f1f1; }
 
+#mobile-nav-toogler {
+  display: none; }
+
+.high-level-toogle {
+  display: none; }
+
+.inner-toggle {
+  display: none; }
+
+@media only screen and (min-width: 940px) {
+  label[for="mobile-nav-toogler"] {
+    display: none; } }
+
+@media only screen and (max-width: 940px) {
+  form[name="search"] {
+    display: none; }
+  .header-content-wrapper {
+    width: 100%; }
+  .main-brand-wrapper {
+    padding-left: 10px; }
+  [for="mobile-nav-toogler"] {
+    display: block;
+    width: 44px;
+    height: 48px;
+    float: right;
+    background-image: url("../img/bars.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer; }
+  #mobile-nav-toogler:checked ~ [for="mobile-nav-toogler"] {
+    background-color: #F2F2F2; }
+  .ms-nav {
+    display: none;
+    margin-left: 0;
+    float: none;
+    position: absolute;
+    top: 48px;
+    right: 0; }
+  #mobile-nav-toogler:checked ~ .ms-nav {
+    display: block; }
+  .main-navigation {
+    width: 300px;
+    min-height: 256px;
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 3; }
+  .main-navigation-dropdown,
+  .main-navigation-item {
+    float: none;
+    position: relative; }
+    .main-navigation-dropdown .navigation-link:hover,
+    .main-navigation-item .navigation-link:hover {
+      background-color: #E5E5E5; }
+  .dropdown-content {
+    display: none;
+    width: 100%;
+    position: static;
+    background-color: #bebebe; }
+  .tab-content {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: static;
+    background-color: #a5a5a5; }
+  .tab-capture.containable::after, .containable.tab-content-link::after {
+    content: url("../img/down-arrow.png"); }
+  .tab-capture:hover, .tab-content-link:hover {
+    background-color: #989898; }
+  .tab-content-link:hover {
+    background-color: #989898; }
+  .high-level-toogle:checked + .main-navigation-dropdown .dropdown-content {
+    display: block; }
+  .tab-capture.containable.active ~ .tab-content, .containable.active.tab-content-link ~ .tab-content {
+    display: none; }
+  .inner-toggle:checked + .tab-capture.containable + .tab-content, .inner-toggle:checked + .containable.tab-content-link + .tab-content,
+  .inner-toggle:checked + .tab-capture.containable.active + .tab-content,
+  .inner-toggle:checked + .containable.active.tab-content-link + .tab-content {
+    display: block; } }
+
 .dropbox-banner {
   height: 700px;
   background-image: url("../img/dropbox.jpg");
@@ -247,15 +327,34 @@ label[for="site-search"] {
 
 @media only screen and (max-width: 600px) {
   .banner-header {
-    width: 350px;
+    width: 300px;
     font-size: 26px; }
   .banner-description {
-    width: 330px;
+    width: 300px;
     font-size: 16px; }
   .try-button {
     font-size: 16px;
     padding: 14px 40px; }
   .banner-try-section {
+    width: 225px;
+    text-align: center; }
+  .dropbox-banner-content {
+    width: 100%;
+    margin: 0;
+    padding: 75px 20px;
+    color: #47525d; }
+  .dropbox-banner {
+    background-position: 250px center; } }
+
+@media only screen and (max-width: 400px) {
+  .banner-header {
+    width: 100%;
+    text-align: center; }
+  .banner-description {
+    width: 100%;
+    text-align: center; }
+  .banner-try-section {
+    width: 100%;
     text-align: center; } }
 
 .invision {

@@ -84,13 +84,13 @@ $try-button-text-color: #fff;
 {
 	.banner-header
 	{
-		width: 350px;
+		width: 300px;
 		font-size: 26px;
 	}
 
 	.banner-description
 	{
-		width: 330px;
+		width: 300px;
 		font-size: 16px;
 	}
 
@@ -102,6 +102,41 @@ $try-button-text-color: #fff;
 
 	.banner-try-section
 	{
+		width: 225px;
+		text-align: center;
+	}
+
+	.dropbox-banner-content
+	{
+		width: 100%;
+		margin: 0;
+		padding: 75px 20px;
+		color: $banner-text-main-color;
+	}
+
+	.dropbox-banner
+	{
+		background-position: 250px center;
+	}
+}
+
+@media only screen and (max-width: 400px)
+{
+	.banner-header
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.banner-description
+	{
+		width: 100%;
+		text-align: center;
+	}
+
+	.banner-try-section
+	{
+		width: 100%;
 		text-align: center;
 	}
 }

@@ -164,11 +164,6 @@ header
     }
 }
 
-.tab-capture.containable.active + .tab-content
-{
-  display: block;
-}
-
 .direct-link
 {
   &:hover
@@ -181,12 +176,19 @@ header
 {
   display: none;
   width: 299px;
+  height: 100%;
   padding: 0;
   position: absolute;
   top: 0;
   left: 238px;
   list-style: none;
   background-color: $navigation-inner-tabs-color;
+}
+
+
+.tab-capture.containable.active ~ .tab-content
+{
+  display: block;
 }
 
 .tab-content-link
@@ -312,5 +314,160 @@ label[for="site-search"]
   &:hover
   {
     background-color: $navigation-bar-secondary-color;
+  }
+}
+
+#mobile-nav-toogler
+{
+  display: none;
+}
+
+.high-level-toogle
+{
+  display: none;
+}
+
+.inner-toggle
+{
+  display: none;
+}
+
+@media only screen and (min-width: 940px)
+{
+  label[for="mobile-nav-toogler"]
+  {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 940px)
+{
+  form[name="search"]
+  {
+    display: none;
+  }
+
+  .header-content-wrapper
+  {
+    width: 100%;
+  }
+
+  .main-brand-wrapper
+  {
+    padding-left: 10px;
+  }
+
+  [for="mobile-nav-toogler"]
+  {
+    display: block;
+    width: 44px;
+    height: 48px;
+    float: right;
+    background-image: url('../img/bars.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+
+  #mobile-nav-toogler:checked ~ [for="mobile-nav-toogler"]
+  {
+    background-color: #F2F2F2;
+  }
+
+  .ms-nav
+  {
+    display: none;
+    margin-left: 0;
+    float: none;
+    position: absolute;
+    top: 48px;
+    right: 0;
+  }
+
+  #mobile-nav-toogler:checked ~ .ms-nav
+  {
+    display: block;
+  }
+
+  .main-navigation
+  {
+    width: 300px;
+    min-height: 256px;
+    background-color: $navigation-bar-secondary-color;
+    position: relative;
+    z-index: 3;
+  }
+
+  .main-navigation-dropdown,
+  .main-navigation-item
+  {
+    float: none;
+    position: relative;
+
+    .navigation-link
+    {
+      &:hover
+      {
+        background-color: $navigation-dropdown-hovered-color;
+      }
+    }
+  }
+
+  .dropdown-content
+  {
+    display: none;
+    width: 100%;
+    position: static;
+    background-color: darken($navigation-bar-secondary-color, 20%);
+  }
+
+  .tab-content
+  {
+    display: none;
+    width: 100%;
+    height: auto;
+    position: static;
+    background-color: darken($navigation-bar-secondary-color, 30%);    
+  }
+
+  .tab-capture.containable
+  {
+    &::after
+    {
+      content: url("../img/down-arrow.png");
+    }
+  }
+
+  .tab-capture
+  {
+    &:hover
+    {
+      background-color: darken($navigation-bar-secondary-color, 35%);
+    }
+  }
+
+  .tab-content-link
+  {
+    &:hover
+    {
+      background-color: darken($navigation-bar-secondary-color, 35%);
+    }
+  }
+
+  .high-level-toogle:checked + .main-navigation-dropdown .dropdown-content
+  {
+    display: block;
+  }
+
+  .tab-capture.containable.active ~ .tab-content
+  {
+    display: none;
+  }
+
+  .inner-toggle:checked + .tab-capture.containable + .tab-content,
+  .inner-toggle:checked + .tab-capture.containable.active + .tab-content
+  {
+    display: block;
   }
 }

@@ -14,14 +14,17 @@
             <img src="https://assets.onestore.ms/cdnfiles/onestorerolling-1606-01000/shell/v3/images/logo/microsoft.png" alt="Microsoft">
           </a>
         </div>
+        <input type="checkbox" id="mobile-nav-toogler">
         <nav class="ms-nav">
           <ul class="main-navigation">
+            <input type="checkbox" id="store-toogle" class="high-level-toogle">
             <li class="main-navigation-dropdown">
-              <a role="button" class="navigation-link">Store</a>
+              <label for="store-toogle" class="navigation-link">Store</label>
               <ul class="dropdown-content">
                 <li class="dropdown-content-tab"><a href="https://www.microsoftstore.com" class="tab-capture direct-link">Store home</a></li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Devices</a>
+                  <input type="checkbox" id="devices-toggle" class="inner-toggle">
+                  <label for="devices-toggle" class="tab-capture containable">Devices</label>
                   <ul class="tab-content">
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-Surface/categoryID.69403400" class="tab-content-link">Microsoft Surface</a></li>
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-PCs-tablets/categoryID.69404700" class="tab-content-link">PCs &amp; tablets</a></li>
@@ -33,7 +36,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Software</a>
+                  <input type="checkbox" id="software-toggle" class="inner-toggle">
+                  <label for="software-toggle" class="tab-capture containable">Software</label>                  
                   <ul class="tab-content">
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900" class="tab-content-link">Office</a></li>
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/categoryID.70036700" class="tab-content-link">Windows</a></li>
@@ -41,7 +45,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Apps</a>
+                  <input type="checkbox" id="apps-toggle" class="inner-toggle">
+                  <label for="apps-toggle" class="tab-capture containable">Apps</label>                  
                   <ul class="tab-content">
                     <li><a href="https://www.microsoft.com/en-us/store/apps" class="tab-content-link">All apps</a></li>
                     <li><a href="https://www.microsoft.com/en-us/store/apps/windows" class="tab-content-link">Windows apps</a></li>
@@ -49,7 +54,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Games</a>
+                  <input type="checkbox" id="games-toggle" class="inner-toggle">
+                  <label for="games-toggle" class="tab-capture containable">Games</label>                  
                   <ul class="tab-content">
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Xbox-One-games/categoryID.69405600" class="tab-content-link">Xbox One games</a></li>
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Xbox-360-games/categoryID.69405800" class="tab-content-link">Xbox 360 games</a></li>
@@ -59,7 +65,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Entertainment</a>
+                  <input type="checkbox" id="entertainment-toggle" class="inner-toggle">
+                  <label for="entertainment-toggle" class="tab-capture containable">Entertainment</label>                  
                   <ul class="tab-content">
                     <li><a href="https://www.microsoft.com/en-us/store/entertainment" class="tab-content-link">All Entertainment</a></li>
                     <li><a href="https://www.microsoft.com/en-us/store/movies-and-tv" class="tab-content-link">Movies &amp; TV</a></li>
@@ -67,7 +74,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Business &amp; Education</a>
+                  <input type="checkbox" id="business-toggle" class="inner-toggle">
+                  <label for="business-toggle" class="tab-capture containable">Business &amp; Education</label>                  
                   <ul class="tab-content">
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Business/categoryID.69408700" class="tab-content-link">Business Store</a></li>
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/edu" class="tab-content-link">Education Store</a></li>
@@ -75,7 +83,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Sale</a>
+                  <input type="checkbox" id="sale-toggle" class="inner-toggle">
+                  <label for="sale-toggle" class="tab-capture containable">Sale</label>                  
                   <ul class="tab-content">
                     <li><a href="https://www.microsoftstore.com/store/msusa/en_US/cat/Back-to-school-essentials/categoryID.67998200?icid=en_US_Store_UH_sale_gm_bts" class="tab-content-link">Back-to-school essentials</a></li>
                     <li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/Sale/categoryID.69403000" class="tab-content-link">Sale</a></li>
@@ -83,13 +92,16 @@
                 </li>
                 <li class="dropdown-content-tab"><a class="tab-capture direct-link">Find a store</a></li>
                 <li class="dropdown-content-tab"><a class="tab-capture direct-link">Gift cards</a></li>
+                <li class="height-compensator"></li>
               </ul>
             </li>
+            <input type="checkbox" id="products-toogle" class="high-level-toogle">
             <li class="main-navigation-dropdown">
-              <a role="button" class="navigation-link">Products</a>
+              <label for="products-toogle" class="navigation-link">Products</label>
               <ul class="dropdown-content">
                 <li class="dropdown-content-tab">
-                  <a href="https://www.microsoftstore.com" class="tab-capture containable">Software &amp; services</a>
+                  <input type="checkbox" id="products-software-toggle" class="inner-toggle">
+                  <label for="products-software-toggle" class="tab-capture containable">Software &amp; services</label>                  
                   <ul class="tab-content">
                     <li><a href="https://www.microsoft.com/en-us/windows" class="tab-content-link">Windows</a></li>
                     <li><a href="https://products.office.com/en-us/home" class="tab-content-link">Office</a></li>
@@ -107,7 +119,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">Devices &amp; Xbox</a>
+                  <input type="checkbox" id="products-devices-toggle" class="inner-toggle">
+                  <label for="products-devices-toggle" class="tab-capture containable">Devices &amp; Xbox</label>                  
                   <ul class="tab-content">
                     <li><a href="https://www.microsoft.com/devices/en-us" class="tab-content-link">All Microsoft devices</a></li>
                     <li><a href="http://www.microsoft.com/surface/en-us" class="tab-content-link">Microsoft Surface</a></li>
@@ -121,7 +134,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">For business</a>
+                  <input type="checkbox" id="for-business-toggle" class="inner-toggle">
+                  <label for="for-business-toggle" class="tab-capture containable">For business</label>                  
                   <ul class="tab-content">
                     <li><a href="http://www.microsoft.com/en-us/server-cloud/" class="tab-content-link">Cloud Platform</a></li>
                     <li><a href="http://azure.microsoft.com/" class="tab-content-link">Microsoft Azure</a></li>
@@ -137,7 +151,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">For developers &amp; IT pros</a>
+                  <input type="checkbox" id="for-developers-toggle" class="inner-toggle">
+                  <label for="for-developers-toggle" class="tab-capture containable">For developers &amp; IT pros</label>                  
                   <ul class="tab-content">
                     <li><a href="https://dev.windows.com/en-us" class="tab-content-link">Develop Windows apps</a></li>
                     <li><a href="http://azure.microsoft.com/" class="tab-content-link">Microsoft Azure</a></li>
@@ -147,7 +162,8 @@
                   </ul>
                 </li>
                 <li class="dropdown-content-tab">
-                  <a class="tab-capture containable">For students &amp; educators</a>
+                  <input type="checkbox" id="for-students-toggle" class="inner-toggle">
+                  <label for="for-students-toggle" class="tab-capture containable">For students &amp; educators</label>                  
                   <ul class="tab-content">
                     <li><a href="http://www.microsoft.com/en-us/education/products/office/default.aspx" class="tab-content-link">Office for students</a></li>
                     <li><a href="http://www.microsoft.com/en-us/education/products/onenote/default.aspx" class="tab-content-link">OneNote in classroom</a></li>
@@ -155,6 +171,7 @@
                     <li><a href="http://www.microsoft.com/en-us/education" class="tab-content-link">Microsoft in education</a></li>
                   </ul>
                 </li>
+                <li class="height-compensator"></li>
               </ul>
             </li>
             <li class="main-navigation-item">
@@ -163,6 +180,7 @@
           </ul>
         </nav>
         <a role="button" class="sign-in">Sign in</a>
+        <label for="mobile-nav-toogler"></label>
         <div class="header-actions">
           <form name="search">
             <input id="site-search" type="search" name="ms-search" title="Search Microsoft.com" placeholder="Search Microsoft.com">
